@@ -12,16 +12,16 @@
   <title>Rinterio</title>
 </head>
 <body class="">
-  <section class="mt-32 mx-32 mb-11">
+  <section class="m-5 lg:mt-32 lg:mx-32 lg:mb-11">
     <div class="navbar">
       <nav class="flex justify-between items-center">
         <div class="nav-left flex justify-between items-center">
-          <a href="index.html" class="px-4">
+          <a href="index.html" class="px-2 lg:px-4">
             <img src="assets/arrow-up-right-01.svg" alt="Rinterio">
           </a>
           <p class="text-4xl font-bold">Rinterio</p>
         </div>
-        <div class="nav-center">
+        <div class="hidden lg:block nav-center">
           <ul class="flex justify-between items-center text-gray-500 text-base">
             <li class="px-4 text-black cursor-pointer">Home</li>
             <li class="px-4 hover:text-black cursor-pointer">Services</li>
@@ -30,7 +30,7 @@
             <li class="px-4 hover:text-black cursor-pointer">Contact Us</li>
           </ul>
         </div>
-        <div class="nav-right flex justify-between items-center">
+        <div class="hidden nav-right lg:flex justify-between items-center">
           <button class="px-2"><img src="assets/Frame 2.svg" alt="search-button"></button>
           <button class="px-4"><img src="assets/Frame 3.svg" alt="cart-button"></button>
           <button class="flex justify-between items-center px-4 bg-lime-300 py-2 rounded-3xl">
@@ -38,18 +38,41 @@
             <img src="assets/arrow-up-right-02.svg" alt="logo">
           </button>
         </div>
+        <div class="lg:hidden nav-right flex justify-between items-center"> 
+          <button class="flex justify-between items-center px-4 py-2 rounded-3xl">
+            <svg width="48.015991" height="48.016113" viewBox="0 0 48.016 48.0161" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <clipPath id="clip1_7956">
+                  <rect id="Frame" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(12.507935 12.507812)"
+                    fill="white" fill-opacity="0" />
+                </clipPath>
+              </defs>
+              <rect id="Frame 6" rx="23.500000" width="47.000000" height="47.000000"
+                transform="translate(0.515991 0.500000) rotate(0.019056)" fill="#FFFFFF" fill-opacity="1.000000" />
+              <rect id="Frame" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(12.507935 12.507812)"
+                fill="#FFFFFF" fill-opacity="0" />
+              <g clip-path="url(#clip1_7956)">
+                <path id="Vector" d="M15.75 18.75L32.25 18.75M15.75 24L32.25 24M15.75 29.25L32.25 29.25" stroke="#737373"
+                  stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
+              </g>
+              <rect id="Frame 6" rx="23.500000" width="47.000000" height="47.000000"
+                transform="translate(0.515991 0.500000) rotate(0.019056)" stroke="#E9E9E9" stroke-opacity="1.000000"
+                stroke-width="1.000000" />
+            </svg>
+          </button>
+        </div>
       </nav>
     </div>
   </section>
-  <section class="mt-32 mx-32 mb-24">
+  <section class="m-5 lg:mt-32 lg:mx-32 lg:mb-24">
     <div class="hero-banner flex flex-col items-center justify-center">
       <div class="hero-banner-img">
         <img src="assets/banner.png" alt="banner">
       </div>
       <div class="hero-banner-txt flex flex-col justify-center items-center">
-        <p class="font-extrabold text-6xl text-black text-center mt-6">A barn house of this design has a striking
-          appearance</p>
-        <p class="text-base text-center mt-6">The barn house captivates with its blend of rustic charm and modern
+        <p class="font-extrabold text-xl lg:text-6xl text-black text-center mt-6">A barn house of this design has a striking appearance</p>
+        <p class="text-sm lg:text-base text-center mt-4 lg:mt-6">The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with
           natural light.</p>
         <button class="flex justify-between items-center px-4 bg-lime-100 py-2 rounded-3xl mt-6">
@@ -59,19 +82,19 @@
       </div>
     </div>
   </section>
-  <section class="bg-gray-100 pt-32 px-32 pb-24">
+  <section class="bg-gray-100 p-5 lg:pt-32 lg:px-32 lg:pb-24">
     <div class="services">
-      <img class="image-vector" src="assets/Vector.png" alt="design-element">
-      <div class="design-container flex justify-between items-center gap-9">
-        <div class="design-container-left w-1/2">
+      <img class="image-vector mb-2" src="assets/Vector.png" alt="design-element">
+      <div class="design-container flex justify-between items-center flex-col lg:flex-row gap-9">
+        <div class="design-container-left w-full lg:w-1/2">
           <button class="bg-white rounded-3xl px-4 py-2 flex justify-between items-center">
             <img class="pe-2" src="assets/Group 1.svg" alt="right-arrow">
-            <p class="pe-2 text-sm">About Us</p>
+            <p class="pe-2 text-base">About Us</p>
           </button>
-          <p class="text-4xl font-extrabold text-black pt-4">We design thoughtful, liveable spaces</p>
-          <p class="text-base text-gray-600 pt-4">The barn house captivates with its blend of rustic charm and modern
+          <p class="text-xl lg:text-4xl font-extrabold text-black pt-4">We design thoughtful, liveable spaces</p>
+          <p class="text-sm lg:text-base text-gray-600 pt-4">The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.</p>
-          <div class="card flex justify-between items-center gap-4 bg-white rounded-xl p-6 my-5">
+          <div class="card flex justify-between items-start lg:items-center gap-4 bg-white rounded-xl p-6 my-5">
             <img src="assets/commercial.png" alt="commercial-building">
             <div class="card-txt">
               <p class="text-xl font-bold text-black pb-2">Commercial</p>
@@ -91,23 +114,23 @@
         </div>
       </div>
     </div>
-    <div class="statistics p-8 bg-white flex justify-between items-center rounded-3xl mt-24">
-      <div class="client-reviews flex flex-col justify-center items-center">
+    <div class="statistics p-8 bg-white flex lg:flex-row flex-col justify-between items-center rounded-3xl mt-24">
+      <div class="client-reviews flex flex-col justify-center items-center lg:pb-0 pb-8">
         <img src="assets/Vector (1).svg" alt="chat-icon">
         <p class="text-4xl font-extrabold text-black pt-4">235+</p>
         <p class="text-base text-gray-600">Happy Client Reviews</p>
       </div>
-      <div class="client-reviews flex flex-col justify-center items-center">
+      <div class="client-reviews flex flex-col justify-center items-center lg:pb-0 pb-8">
         <img src="assets/departement.svg" alt="icon">
         <p class="text-4xl font-extrabold text-black pt-4">50+</p>
         <p class="text-base text-gray-600">Work Departments</p>
       </div>
-      <div class="client-reviews flex flex-col justify-center items-center">
+      <div class="client-reviews flex flex-col justify-center items-center lg:pb-0 pb-8">
         <img src="assets/Group 8.svg" alt="group-icon">
         <p class="text-4xl font-extrabold text-black pt-4">30K+</p>
         <p class="text-base text-gray-600">Our Happy Client</p>
       </div>
-      <div class="client-reviews flex flex-col justify-center items-center">
+      <div class="client-reviews flex flex-col justify-center items-center lg:pb-0 pb-8">
         <img src="assets/user-multiple.svg" alt="user-multiple-icon">
         <p class="text-4xl font-extrabold text-black pt-4">307+</p>
         <p class="text-base text-gray-600">Staff Members</p>
@@ -118,10 +141,9 @@
         <img class="pe-2" src="assets/Group 1.svg" alt="right-arrow">
         <p class="pe-2 text-sm">How we works</p>
       </button>
-      <p class="text-4xl font-extrabold text-black px-20 pt-4">Our Works Process</p>
-      <p class="text-base text-gray-600 px-28 py-4 text-center">The barn house captivates with its blend of rustic charm
-        and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-      <div class="grid grid-cols-4 gap-6">
+      <p class="text-2xl lg:text-4xl font-extrabold text-black lg:px-20 pt-4">Our Works Process</p>
+      <p class="text-base text-gray-600 px-8 lg:px-28 py-4 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <div class="works-process p-6 rounded-3xl bg-pink-200">
           <img src="assets/concept.png" alt="chat-icon" class="pb-4">
           <p class="text-xl font-extrabold text-black pb-2">Concept</p>
@@ -149,69 +171,67 @@
       </div>
     </div>
   </section>
-  <section class="mt-32 mx-32 mb-24">
+  <section class="m-5 lg:mt-32 lg:mx-32 lg:mb-24">
     <div class="portfolio">
       <div class="portfolio-txt flex flex-col justify-center items-center">
         <button class="bg-lime-100 rounded-3xl px-4 py-2 flex items-center w-fit">
           <img class="pe-2" src="assets/Group 1.svg" alt="right-arrow">
           <p class="pe-2 text-sm">Explore our Latest works</p>
         </button>
-        <p class="text-4xl font-black text-black pt-4">Our Latest Portfolio</p>
-        <p class="text-base text-black px-28 pt-4 text-center">The barn house captivates with its blend of rustic charm
-          and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <p class="text-2xl lg:text-4xl font-extrabold text-black lg:px-20 pt-4">Our Latest Portfolio</p>
+        <p class="text-base text-gray-600 px-8 lg:px-28 py-4 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
       </div>
-      <div class="portfolio-cards pt-4 grid grid-cols-4 gap-6">
+      <div class="portfolio-cards pt-4 grid grid-cols-1 lg:grid-cols-4 gap-6">
         <div
-          class="portfolio-card p-6 flex justify-between items-center border-2 border-gray-200 rounded-2xl col-span-3 gap-4">
-          <img class="w-56 h-44 border-2 border-dashed border-gray-400" src="assets/img1.png" alt="">
+          class="portfolio-card p-6 flex justify-between items-center border-2 border-gray-200 rounded-2xl lg:col-span-3 gap-4">
+          <img class="w-full lg:w-56 lg:h-44 border-2 border-dashed border-gray-400" src="assets/img1.png" alt="">
           <div class="portfolio-card-txt">
             <p class="text-xl font-bold text-black pb-2">Commercial</p>
-            <p class="text-base text-gray-400">The barn house captivates with its blend of rustic charm and modern.</p>
+            <p class="text-sm lg:text-base text-gray-400">The barn house captivates with its blend of rustic charm and modern.</p>
             <button class="flex items-center w-fit">
-              <p class="pe-2 text-xl font-extrabold">View Details</p>
+              <p class="pe-2 text-base lg:text-xl font-extrabold">View Details</p>
               <img class="pe-2" src="assets/arrow-up-right-01.svg" alt="right-arrow">
             </button>
           </div>
         </div>
         <div
-          class="portfolio-card p-4 flex justify-between items-center border-2 border-gray-200 rounded-2xl col-span-1 gap-4">
-          <img class="w-56 h-44 border-2 border-dashed border-gray-400" src="assets/img2.png" alt="">
+          class="portfolio-card p-4 flex justify-between items-center border-2 border-gray-200 rounded-2xl lg:col-span-1 gap-4">
+          <img class="w-full lg:w-56 lg:h-44 border-2 border-dashed border-gray-400" src="assets/img2.png" alt="">
         </div>
         <div
-          class="portfolio-card p-4 flex justify-between items-center border-2 border-gray-200 rounded-2xl col-span-1 gap-4">
-          <img class="w-56 h-44 border-2 border-dashed border-gray-400" src="assets/img3.png" alt="">
+          class="portfolio-card p-4 flex justify-between items-center border-2 border-gray-200 rounded-2xl lg:col-span-1 gap-4">
+          <img class="w-full lg:w-56 lg:h-44 border-2 border-dashed border-gray-400" src="assets/img3.png" alt="">
         </div>
         <div
-          class="portfolio-card p-6 flex justify-between items-center border-2 border-gray-200 rounded-2xl col-span-2 gap-4">
-          <img class="w-56 h-44 border-2 border-dashed border-gray-400" src="assets/img4.png" alt="">
+          class="portfolio-card p-6 flex justify-between items-center border-2 border-gray-200 rounded-2xl lg:col-span-2 gap-4">
+          <img class="w-full lg:w-56 lg:h-44 border-2 border-dashed border-gray-400" src="assets/img4.png" alt="">
           <div class="portfolio-card-txt">
-            <p class="text-xl font-bold text-black pb-2">Commercial</p>
-            <p class="text-base text-gray-400">The barn house captivates with its blend of rustic charm and modern.</p>
+            <p class="text-base lg:text-xl font-bold text-black pb-2">Commercial</p>
+            <p class="text-sm lg:text-base text-gray-400">The barn house captivates with its blend of rustic charm and modern.</p>
             <button class="flex items-center w-fit">
-              <p class="pe-2 text-xl font-extrabold">View Details</p>
+              <p class="pe-2 text-base lg:text-xl font-extrabold">View Details</p>
               <img class="pe-2" src="assets/arrow-up-right-01.svg" alt="right-arrow">
             </button>
           </div>
         </div>
         <div
-          class="portfolio-card p-4 flex justify-between items-center border-2 border-gray-200 rounded-2xl col-span-1 gap-4">
-          <img class="w-56 h-44 border-2 border-dashed border-gray-400" src="assets/img5.png" alt="">
+          class="portfolio-card p-4 flex justify-between items-center border-2 border-gray-200 rounded-2xl lg:col-span-1 gap-4">
+          <img class="w-full lg:w-56 lg:h-44 border-2 border-dashed border-gray-400" src="assets/img5.png" alt="">
         </div>
       </div>
     </div>
   </section>
-  <section class="bg-gray-100 pt-32 px-32 pb-24">
+  <section class="bg-gray-100 p-5 lg:pt-32 lg:px-32 lg:pb-24">
     <div class="articles">
       <div class="articles-txt flex flex-col justify-center items-center">
         <button class="bg-lime-100 rounded-3xl px-4 py-2 flex items-center w-fit">
           <img class="pe-2" src="assets/Group 1.svg" alt="right-arrow">
           <p class="pe-2 text-sm">Explore our Latest works</p>
         </button>
-        <p class="text-4xl font-black text-black pt-4">Read Our Articles and News</p>
-        <p class="text-base text-black px-28 pt-4 text-center">The barn house captivates with its blend of rustic charm
-          and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <p class="text-2xl lg:text-4xl font-extrabold text-black lg:px-20 pt-4">Read Our Articles and News</p>
+        <p class="text-base text-gray-600 px-8 lg:px-28 py-4 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
       </div>
-      <div class="articles-cards grid grid-cols-3 gap-6 pt-6">
+      <div class="articles-cards grid grid-cols-1 lg:grid-cols-3 gap-6 pt-6">
         <div class="article-card p-6 rounded-2xl bg-white">
           <img class="border-2 border-dashed border-gray-400" src="assets/article1.png" alt="">
           <div class="article-card-txt">
@@ -344,47 +364,47 @@
       </div>
     </div>
   </section>
-  <section class="bg-[url('assets/bg.jpg')] m-2 pt-32 px-32 pb-24">
+  <section class="bg-[url('assets/bg.jpg')] m-2 p-5 lg:pt-32 lg:px-32 lg:pb-24">
     <div class="next-project">
       <div class="next-project-txt flex flex-col justify-center items-center">
         <button class="bg-lime-100 rounded-3xl px-4 py-2 flex items-center w-fit">
           <img class="pe-2" src="assets/Group 1.svg" alt="right-arrow">
           <p class="pe-2 text-sm">Let's Connect</p>
         </button>
-        <p class="text-4xl font-black text-black pt-4">Let's Discuss Next Project</p>
-        <p class="text-base text-black px-28 pt-4 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <p class="text-2xl lg:text-4xl font-extrabold text-black lg:px-20 pt-4">Let's Discuss Next Project</p>
+        <p class="text-base text-gray-600 px-8 lg:px-28 py-4 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
       </div>
-      <div class="next-project-form grid grid-cols-2 gap-6 mt-4">
-        <input class="p-5 rounded-3xl" type="text" placeholder="First Name*" required>
+      <div class="next-project-form grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4">
+        <input class="p-5 rounded-3xl col-span-1" type="text" placeholder="First Name*" required>
         <input class="p-5 rounded-3xl" type="text" placeholder="Last Name*" required>
         <input class="p-5 rounded-3xl" type="text" placeholder="Phone Number*" required>
         <input class="p-5 rounded-3xl" type="email" placeholder="Email*" required>
-        <input class="p-5 rounded-3xl col-span-2" type="text" placeholder="Write your message here">
-        <button class="bg-lime-300 rounded-3xl px-4 py-2 flex items-center mt-4 w-full justify-center col-span-2">
+        <input class="p-5 rounded-3xl lg:col-span-2" type="text" placeholder="Write your message here">
+        <button class="bg-lime-300 rounded-3xl px-4 py-2 flex items-center mt-4 w-full justify-center lg:col-span-2">
           <p class="pe-2 text-xl font-extrabold">Send your email</p>
           <img class="pe-2" src="assets/arrow-up-right-02.svg" alt="right-arrow">
         </button>
       </div>
     </div>
   </section>
-  <section class="footer bg-black pt-32 px-32 pb-24 text-white flex flex-col items-center justify-center gap-16">
+  <section class="footer bg-black p-5 lg:pt-32 lg:px-32 lg:pb-24 text-white flex flex-col items-center justify-center lg:gap-16">
     <div class="flex items-center">
       <a href="index.html" class="px-4">
-        <img src="assets/arrow-up-right-01.svg" alt="Rinterio">
+        <img class="" src="assets/arrow-up-right-01.svg" alt="Rinterio">
       </a>
-      <p class="text-4xl font-bold text-white">Rinterio</p>
+      <p class="text-4xl font-extrabold lg:px-20 lg:pt-4  text-white">Rinterio</p>
     </div>
-    <p class="text-base text-center text-gray-500 px-48">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-    <div class="nav-center">
+    <p class="text-base text-center text-gray-500 lg:py-0 py-5 lg:px-48">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+    <div class="nav-center py-5 lg:py-0">
       <ul class="flex justify-between items-center text-gray-400 text-base">
-        <li class="px-12 cursor-pointer">Home</li>
-        <li class="px-12 cursor-pointer">Services</li>
-        <li class="px-12 cursor-pointer">Portfolio</li>
-        <li class="px-12 cursor-pointer">Blogs</li>
-        <li class="px-12 cursor-pointer">Contact Us</li>
+        <li class="px-4 lg:px-12 cursor-pointer">Home</li>
+        <li class="px-4 lg:px-12 cursor-pointer">Services</li>
+        <li class="px-4 lg:px-12 cursor-pointer">Portfolio</li>
+        <li class="px-4 lg:px-12 cursor-pointer">Blogs</li>
+        <li class="px-4 lg:px-12 cursor-pointer">Contact Us</li>
       </ul>
     </div>
-    <button class="flex justify-between items-center px-4 bg-lime-300 py-2 rounded-3xl">
+    <button class="flex justify-between items-center lg:my-0 my-5 px-4 bg-lime-300 py-2 rounded-3xl">
       <p class="pe-2 text-xl font-extrabold text-black">Book Consult</p>
       <img src="assets/arrow-up-right-02.svg" alt="logo">
     </button>
